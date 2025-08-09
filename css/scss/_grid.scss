@@ -30,3 +30,15 @@ $s-device: 480px;
 }
 
 // função do grid
+
+@function grid($col, $offset: false){
+  $width: $col / $cols * 100 + "%";
+  $resut: calc(#{$width} - #{$gutter});
+  @if $offset == offset {
+    $gutter: $gutter / 2;
+    $resut: calc(#{$width} + #{$gutter});
+  }
+  @return $resut;
+}
+
+// 
