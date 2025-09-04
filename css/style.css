@@ -165,8 +165,12 @@
   clear: both;
 }
 
-div {
-  background: rgba(0, 0, 0, 0.4);
+/* div {
+  background: rgba(0,0,0,.4);
   min-height: 50px !important;
   margin-bottom: 20px;
+} */
+div {
+  font-family: "Aref Ruqaa", serif;
+  font-family: "PT Mono", monospace;
 }
